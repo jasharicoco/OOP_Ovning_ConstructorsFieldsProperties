@@ -2,20 +2,20 @@
 {
     internal class Book
     {
-        private string Title { get; set; }
-        private string Author { get; set; }
-        private int NumberOfPages { get; set; }
+        private string _Title { get; set; }
+        private string _Author { get; set; }
+        private int _NumberOfPages { get; set; }
 
-        public Book(string _title, string _author, int numberOfPages)
+        public Book(string title, string author, int numberOfPages)
         {
-            Title = _title;
-            Author = _author;
-            NumberOfPages = numberOfPages;
+            _Title = title;
+            _Author = author;
+            _NumberOfPages = numberOfPages;
         }
 
         public void Present()
         {
-            Console.WriteLine($"{Title} ({NumberOfPages} pages), by {Author}");
+            Console.WriteLine($"{_Title} ({_NumberOfPages} pages), by {_Author}");
         }
     }
 }

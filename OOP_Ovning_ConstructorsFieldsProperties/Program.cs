@@ -28,9 +28,7 @@
             Circle circle1 = new Circle(5);
 
             Console.WriteLine($"{circle1.Area}");
-
             circle1.IncreaseByFactor(2);
-
             Console.WriteLine($"{circle1.Area}");
         }
     }

@@ -39,6 +39,12 @@
 
             // Temperature
 
+            Temperature temp1 = new Temperature(50);
+            temp1.ShowTemp();
+            temp1.AddTemp(10);
+            temp1.ShowTemp();
+
+            // Car
 
         }
     }

@@ -30,6 +30,16 @@
             Console.WriteLine($"{circle1.Area}");
             circle1.IncreaseByFactor(2);
             Console.WriteLine($"{circle1.Area}");
+
+            // Employee
+
+            Employee employee1 = new Employee("Frank", "Boss", 500);
+            employee1.Present();
+            Console.WriteLine($"{employee1.YearlyIncome()} dollars a year.");
+
+            // Temperature
+
+
         }
     }
 }

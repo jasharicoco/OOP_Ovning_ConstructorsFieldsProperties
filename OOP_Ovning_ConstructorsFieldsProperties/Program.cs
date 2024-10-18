@@ -60,7 +60,7 @@
             Car car3 = new Car("FillipinoDelux", "Oskarshamn", 2016);
 
             Console.WriteLine($"Number of Cars in our catalogue: {Car.InstanceCount}");
-            Console.WriteLine($"Average year of production for all our cars is {Car.AverageYear()}");
+            Console.WriteLine($"Average age of the Cars in our catalogue: {Car.AverageAge()}");
         }
     }
 }

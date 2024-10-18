@@ -6,38 +6,18 @@
         public double Celsius
         {
             get { return _celsius; }
-            set
-            {
-                _celsius = value;
-                _fahrenheit = (_celsius * 9 / 5) + 32;
-                _kelvin = _celsius + 273.15;
-            }
+            set { _celsius = value; }
         }
-
-        private double _fahrenheit;
         public double Fahrenheit
         {
-            get { return _fahrenheit; }
-            set
-            {
-                _fahrenheit = value;
-                _celsius = (value - 32) * 5 / 9;
-                _kelvin = _celsius + 273.15;
-            }
+            get { return _celsius * 1.8 + 32; }
+            set { _celsius = value; }
         }
-
-        private double _kelvin;
         public double Kelvin
         {
-            get { return _kelvin; }
-            set
-            {
-                _kelvin = value;
-                _celsius = value - 273.15;
-                _fahrenheit = (_celsius * 9 / 5) + 32;
-            }
+            get { return _celsius + 273.15; }
+            set { _celsius = value; }
         }
-
         public Temperature(double celsius)
         {
             Celsius = celsius;
